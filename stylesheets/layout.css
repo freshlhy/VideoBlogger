@@ -142,6 +142,12 @@ body {
     background: #fbfcfc url('../images/main-bg.jpg') left top;
 }
 
+.small-thumbs-list figure img, .video-item-content figure img, .list-video > li, .list-blog-posts figure img, .blog-post-embed, .embed-container, .author-bio figure img, .list-comments figure img, .list-comments li, .figure-left img, .figure-right img {
+    -webkit-box-shadow: 0px 3px 0px #E5E5E5;
+    -moz-box-shadow: 0px 3px 0px #E5E5E5;
+    box-shadow: 0px 3px 0px #E5E5E5;
+}
+
 h1 a:hover, p a:hover {
     border-bottom: 1px dotted;
 }
@@ -182,6 +188,8 @@ h5 {
 .button {
     font-size: 11px;
     line-height: 36px;
+    padding: 0 18px;
+    display: inline-block;
 }
 
 .fancy-hover::before {
@@ -217,10 +225,27 @@ p a, li a {
     border-bottom: none;
 }
 
+.primary-navigation ul li a:hover, .button, .copyright-stripe p, .list-tags li a {
+    color: white;
+}
+
 h1 a, .fancy-hover::before { color: #303437; }
 
 em {
     color: #c2c3c8;
+}
+
+.list-video li, .button, .list-blog-posts li, 
+.list-pagination li a, .list-tags a, .single-blog-post,
+.list-comments li, .page-container, .error-box,
+.regular-form input, .regular-form textarea, .confirmation-box {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -moz-background-clip: padding; 
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box;
 }
 
 .button {
@@ -433,15 +458,15 @@ em {
 
 .fancy-hover::before {
     content: ')';
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    width: 1em;
-    height: 1em;
-    text-align: center;
-    margin: -0.5em 0 0 -0.5em;
-    z-index: 500;
+position: absolute;
+display: block;
+top: 50%;
+left: 50%;
+width: 1em;
+height: 1em;
+text-align: center;
+margin: -0.5em 0 0 -0.5em;
+z-index: 500;
 }
 
 /* -------------- VIDEO LIST ------------ */
@@ -468,6 +493,7 @@ em {
     display: block;
 
     width: 100%
+
 }
 
 .video-item-content {
@@ -493,7 +519,7 @@ em {
     display: block;
     float: left;
     height: 18px;
-    width: 10px;
+    width: 11px;
 
     background: transparent url("../images/sprites.png") no-repeat -11px -90px;
     
@@ -502,4 +528,100 @@ em {
 
 .rating li.rated {
     background-position: 0 -90px;
+}
+
+/* ---------------- FOOTER ------------------ */
+
+.top-stripe, .copyright-stripe {
+    background: #2E3235 url('../images/pattern-bg-top-stripe.jpg') left top;
+}
+
+.main-footer {
+    margin-top: 36px;
+    background: white url('../images/pattern-light-bg.jpg') left top;
+}
+
+.footer-stripe {
+    background: transparent url('../images/pattern-detail.jpg') repeat-x left top;
+    padding: 36px 0 18px 0;
+}
+
+.copyright-stripe {
+    padding: 33px 0 18px 0;
+    border-top: 3px solid #272a2c;
+    text-align: center;
+    padding-top: 36px;
+}
+
+.copyright-stripe p {
+    color: white;
+}
+
+.tweet-list li {
+    list-style-type: none;
+    margin-bottom: 18px;
+    background: transparent url('../images/sprites.png') no-repeat -4px -118px;
+    padding-left: 24px;
+}
+
+.tweet-list li p em {
+    display: block;
+}
+
+.two-column-list li {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dotted #d2d3d5;
+}
+
+.full-width-list li {
+    list-style-type: none;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dotted #d2d3d5;
+    
+    background: transparent url('../images/sprites.png') no-repeat left -293px;
+
+    padding-left: 14px;
+}
+
+.social-list li {
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.social-list li a {
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+
+    background: transparent url('../images/sprites.png') no-repeat left -330px;
+
+}
+
+.social-list li a.social-facebook {
+   background-position: -36px -330px; 
+}
+.social-list li a.social-facebook:hover {
+   background-position: -36px -348px; 
+}
+
+.social-list li a.social-twitter {
+   background-position: 0px -330px; 
+}
+
+.social-list li a.social-twitter:hover {
+   background-position: 0px -348px; 
+}
+
+.social-list li a.social-rss {
+   background-position: -18px -330px; 
+}
+.social-list li a.social-rss:hover {
+   background-position: -18px -348px; 
 }
