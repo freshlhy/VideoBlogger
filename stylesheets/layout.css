@@ -238,7 +238,8 @@ em {
 .list-video li, .button, .list-blog-posts li, 
 .list-pagination li a, .list-tags a, .single-blog-post,
 .list-comments li, .page-container, .error-box,
-.regular-form input, .regular-form textarea, .confirmation-box {
+.regular-form input, .regular-form textarea, .confirmation-box,
+.main-blog-post {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -383,6 +384,11 @@ em {
 
 }
 
+.middle-stripe.minimal {
+    padding: 18px 0 0 0;
+    margin-bottom: 36px;
+}
+
 .middle-stripe h1 {
     font-weight: bold;
 }
@@ -449,6 +455,7 @@ em {
     -ms-transition: opacity 0.3s ease-out;
     -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
+
 }
 
 .fancy-hover:hover img {
@@ -470,6 +477,7 @@ z-index: 500;
 }
 
 /* -------------- VIDEO LIST ------------ */
+
 .list-video > li {
     background-color: white;
     border: 1px solid #e1e3e3;
@@ -509,9 +517,9 @@ z-index: 500;
 }
 
 
-.hd-on { background-position: 0 -73px; }
+.hd-on { background-position: 0 -76px; }
 
-.hd-off { background-position: -17px -73px; }
+.hd-off { background-position: -17px -76px; }
 
 .rating { margin: 0; }
 
@@ -521,14 +529,37 @@ z-index: 500;
     height: 18px;
     width: 11px;
 
-    background: transparent url("../images/sprites.png") no-repeat -11px -90px;
+    background: transparent url("../images/sprites.png") no-repeat -11px -95px;
     
     margin: 0 3px 0 0;
 }
 
 .rating li.rated {
-    background-position: 0 -90px;
+    background-position: 0 -95px;
 }
+
+
+/*---------------SINGLE BLOG POST-------------*/
+
+.main-blog-post {
+    background-color: white;
+    border: 1px solid #e1e3e3;
+    margin-bottom: 18px;    
+}
+
+.main-blog-post {
+    padding-top: 18px;
+}
+
+.main-blog-post header .alpha { 
+    padding-left: 18px; 
+}
+
+.main-blog-post header .omega {
+    padding-right: 18px;
+    text-align: right;
+}
+
 
 /* ---------------- FOOTER ------------------ */
 

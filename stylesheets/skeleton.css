@@ -30,6 +30,11 @@
     .column.alpha, .columns.alpha               { margin-left: 0; }
     .column.omega, .columns.omega               { margin-right: 0; }
 
+    .column.alpha.negative-margin,
+    .columns.alpha.negative-margin              { margin-left: -1px;}
+    .column.omega.negative-margin,
+    .columns.omega.negative-margin              { margin-right: -1px;}
+
     /* Base Grid */
     .container .one.column,
     .container .one.columns                     { width: 40px;  }
